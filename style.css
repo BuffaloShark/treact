@@ -8,6 +8,38 @@
     color: #243e63;
 }
 
+.header__blob {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    opacity: 0.05;
+    width: 256px;
+    height: 256px;
+    transform: matrix(1, 0, 0, 1, -163, 0);
+}
+
+.features__blob {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    opacity: 0.25;
+    width: 16rem;
+    padding: 16px;
+    transform: translateX(96px) translateY(192px) scaleX(1) scaleY(1);
+}
+
+.quality__grid {
+    transform: translateX(50%) translateY(50%) scaleX(1) scaleY(1);
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    fill: rgb(100, 21, 255);
+    z-index: 0;
+    display: block;
+}
+
 body {
     max-width: 100vw;
     overflow-x: hidden;
@@ -309,7 +341,7 @@ header .row {
 .quality__row {
     display: flex;
     justify-content: space-between;
-    margin: 0 80px;
+    margin: 0 auto;
 }
 
 .quality__description {
@@ -485,6 +517,46 @@ header .row {
     position: relative;
     z-index: 100;
     background: #fff;
+    overflow: hidden;
+}
+
+.plan2 {
+    background: linear-gradient(135deg, rgb(76, 81, 191) 0%, rgb(102, 126, 234) 100%);
+    width: 100%;
+    max-width: 368px;
+    margin: 64px 32px 0 0;
+    border-radius: 8px;
+    position: relative;
+    z-index: 100;
+    overflow: hidden;
+}
+
+.plan__stripe {
+    color: #f7fafc;
+    background: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);
+}
+
+.plan__stripe1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 8px;
+}
+
+.plan__stripe3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 8px;
+    background: linear-gradient(115deg, rgb(245, 101, 101) 0%, rgb(254, 178, 178) 100%);
+}
+
+.plan__top {
+    text-align: center;
+    padding: 32px;
+    line-height: 1.6;
 }
 
 .plan__top {
@@ -497,13 +569,28 @@ header .row {
     font-size: 20px;
     font-weight: 700;
     color: black;
+    letter-spacing: 0.02em;
+}
+
+.plan__name2 {
+    color: #f7fafc;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0.03em;
 }
 
 .plan__price {
     font-size: 48px;
-    font-weight: 500;
+    font-weight: 700;
     margin: 12px 0;
     color: black;
+}
+
+.plan__price2 {
+    font-size: 48px;
+    font-weight: 700;
+    margin: 12px 0;
+    color: #f7fafc;
 }
 
 .plan__duration {
@@ -514,9 +601,19 @@ header .row {
     line-height: 1.6;
 }
 
+.plan__duration2 {
+    font-size: 16px;
+    font-weight: 500;
+    color: #f7fafc;
+    letter-spacing: 0.1em;
+    line-height: 1.6;
+}
+
 .plan__middle {
     text-align: center;
     padding: 32px;
+    border-top: 2px solid rgb(229, 231, 235);
+    border-bottom: 2px solid rgb(229, 231, 235);
 }
 
 .plan__target {
@@ -527,11 +624,28 @@ header .row {
     letter-spacing: 0.03em;
 }
 
+.plan__target2 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #f7fafc;
+    line-height: 1.5;
+    letter-spacing: 0.0em;
+}
+
 .plan__feature {
     font-size: 18px;
     font-weight: 500;
     letter-spacing: 0.02em;
     color: #718096;
+    line-height: 2;
+    margin-top: 20px;
+}
+
+.plan__feature2 {
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    color: #f7fafcca;
     line-height: 2;
     margin-top: 20px;
 }
@@ -553,9 +667,38 @@ header .row {
     letter-spacing: 0.05em;
     line-height: 1.5;
     transition: all 300ms;
-
     color: #f7fafc;
     background: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);
+}
+
+.plan__button2 {
+    padding: 16px 32px;
+    border-radius: 9999px;
+    border: none;
+    font-size: 16px;
+    font-weight: 700;
+    width: 100%;
+    max-width: 180px;
+    letter-spacing: 0.05em;
+    line-height: 1.5;
+    transition: all 300ms;
+    color: #6415ff;
+    background-color: #f7fafc;
+}
+
+.plan__button3 {
+    padding: 16px 32px;
+    border-radius: 9999px;
+    border: none;
+    font-size: 16px;
+    font-weight: 700;
+    width: 100%;
+    max-width: 180px;
+    letter-spacing: 0.05em;
+    line-height: 1.5;
+    transition: all 300ms;
+    color: #f7fafc;
+    background: linear-gradient(115deg, rgb(245, 101, 101) 0%, rgb(254, 178, 178) 100%);
 }
 
 
@@ -686,12 +829,12 @@ header .row {
 /* GET STARTED */
 
 
-#getstarted .row {
+#start .row {
     position: relative;
     overflow: hidden;
 }
 
-.getstarted__container {
+.start__container {
     padding: 96px 0;
     width: 100%;
     background-color: rgb(100, 21, 255);
@@ -701,9 +844,9 @@ header .row {
     align-items: center;
 }
 
-.getstarted__row {
-    width: 100px;
-    max-width: 1200px;
+.start__row {
+    width: 100%;
+    max-width: 1024px;
     padding: 0 32px;
     display: flex;
     justify-content: center;
@@ -711,54 +854,56 @@ header .row {
     margin: 0 auto;
 }
 
-.getstarted__title {
-    color: #f7fafc;
-    font-size: 36px;
+.start__title {
+    font-size: 30px;
     font-weight: 700;
     line-height: 1.6;
+    color: #f7fafc;
     z-index: 2;
+    width: 50%;
 }
 
-.getstarted__buttons {
+.start__buttons {
     display: flex;
     justify-content: flex-end;
+    width: 50%;
 }
 
-.getstarted__btn1 {
+.start__button1 {
+    background: #f56565;
+    margin-right: 32px;
+    transition: all 300ms;
+    box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
     padding: 20px 40px;
-    border-radius: 9999px;
+    border-radius: 500px;
     font-weight: 700;
-    font-size: 18px;
-    color: #fff;
-    background-color: #f76071;
-    border: none;
-    line-height: 1.6;
-    letter-spacing: 0.02em;
-    margin: 1px;
+    font-size: 16px;
+    color: #f7fafc;
+    line-height: 1.5;
+    letter-spacing: 0.025em;
     z-index: 2;
 }
 
-.getstarted__btn2 {
+.start__button2 {
+    border: 1px solid rgb(160, 174, 192);
+    margin-right: 32px;
+    transition: all 300ms;
     padding: 20px 40px;
-    border-radius: 9999px;
+    border-radius: 500px;
     font-weight: 700;
-    font-size: 18px;
-    color: #fff;
-    background-color: #ffffff00;
-    border: 1px solid #fff;
-    line-height: 1.6;
-    letter-spacing: 0.02em;
-    margin: 1px;
+    font-size: 16px;
+    color: #f7fafc;
+    line-height: 1.5;
+    letter-spacing: 0.025em;
     z-index: 2;
 }
-
-
 
 /* FOOTER */
 
 
 footer {
-    padding: 96px 32px;
+    margin-top: 96px;
+    padding: 48px 32px;
     background-color: #6415ff;
     margin-bottom: -32px;
     position: relative;
@@ -861,5 +1006,5 @@ a.footer__column--link {
 }
 
 .footer__social--link i {
-    font-size: 24px;
+    font-size: 20px;
 }
