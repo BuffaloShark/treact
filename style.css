@@ -1142,6 +1142,9 @@ a.footer__column--link {
 
 
 @media(max-width: 1024px) {
+    .nav__links {
+        display: none;
+    }
     #quality .row,
     #values .row {
         display: flex;
@@ -1228,6 +1231,9 @@ a.footer__column--link {
 
 @media(max-width: 768px) {
     
+    .nav__links {
+        display: none;
+    }
     .header__customers--img {
         padding-right: 0;
         padding-top: 14px;
@@ -1322,6 +1328,9 @@ a.footer__column--link {
 }
 
 @media(max-width: 640px) {
+    .nav__links {
+        display: none;
+    }
     .header__customers--img {
         padding-right: 0;
         padding-top: 14px;
