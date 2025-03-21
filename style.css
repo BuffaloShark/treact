@@ -1134,6 +1134,91 @@ a.footer__column--link {
 
 
 
+@media(max-width: 1024px) {
+    #quality .row,
+    #values .row {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    #steps .row,
+    #testimonials .row {
+        flex-direction: column;
+        align-items: center;
+    }
+    #pricing .row {
+        margin-top: 40px;
+    }
+    .features {
+        display: flex;
+        justify-content: center;
+    }
+    .feature {
+        width: auto;
+        max-width: 384px;
+    }
+    .feature__row {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .quality__description, .quality__img--wrapper, .steps__description, .steps__img--wrapper, .values__description, .values__img, .testimonial__description, .testimonials__img {
+        width: 100%;
+        max-width: 448px;
+    }
+    .quality__description {
+        padding: 0;
+        margin-top: 64px;
+        text-align: center;
+    }
+    .section__tag {
+        text-align: center;
+        padding-top: 48px;
+    }
+    .values__list {
+        max-resolution: 0 auto;
+    }
+    .values__description, .testimonial__description {
+        margin-top: 64px;
+        text-align: center;
+        padding-right: 0;
+    }
+    .testimonial__para--description {
+        text-align: center;
+    }
+    .testimonial__img {
+        width: 65px;
+    }
+    .testimonial__name {
+        font-size: 18px;
+    }
+    .testimonial__role {
+        font-size: 14px;
+    }
+    .testimonial__btn {
+        border-radius: 9999px;
+        font-size: 14px;
+    }
+    .footer__columns {
+        justify-content: flex-start;
+    }
+    .footer__column {
+        width: calc(100% /3);
+    }
+    .footer__bottom {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer__copyright {
+        margin-top: 32px;
+    }
+    .footer__socials {
+        margin-top: 32px;
+    }
+}
+
+
+
 @media(max-width: 768px) {
     #quality .row,
     #values .row {
